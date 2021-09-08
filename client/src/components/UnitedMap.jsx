@@ -11,7 +11,7 @@ import RegionZoom from "./RegionZoom";
 
 const UnitedMap = ({ region, usBorderData, states, loadUnitedMap }) => {
   const mapCenter = [37.0902, -95.7129];
-  const mapZoom = 4;
+  const [mapZoom, setMapZoom] = useState(determineWindow())
   const [USMapZoom, setUSmapZoom] = useState();
   const [newUSCenter, setUSCenter] = useState();
   const [geojson, setGeojson] = useState();
@@ -25,6 +25,14 @@ const UnitedMap = ({ region, usBorderData, states, loadUnitedMap }) => {
       fillOpacity: 1,
     };
   };
+
+  function determineWindow() {
+    const { innerWidth: width} = window;
+    if (width < 600) {
+      return 2.3
+    } else return 4
+  }
+ 
 
   useEffect(() => {
     if (region === "Northeast") {
@@ -47,25 +55,9 @@ const UnitedMap = ({ region, usBorderData, states, loadUnitedMap }) => {
       setUSmapZoom(7);
     } else {
       setUSCenter([37.0902, -95.7129]);
-      setUSmapZoom(4);
+      setUSmapZoom(determineWindow());
     }
   }, [region]);
-
-  //when mouse hovers over country or state
-  // function highlightBorder(e) {
-  //   let layer = e.target;
-  //   layer.setStyle({
-  //     weight: 5,
-  //     color: "#666",
-  //     dashArray: "",
-  //     fillOpacity: 0.7,
-  //   });
-
-  // }
-  //reset to default values
-  // function resetHighlight(e) {
-  //   geojson.resetStyle(e.target);
-  // }
 
   //first argument is the feature for GeoJSON we are dealing with
   //second is the layer (what's drawn on screen)

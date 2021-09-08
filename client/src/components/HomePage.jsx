@@ -156,6 +156,8 @@ const HomePage = ({
     setLoadUnitedMap(false);
   }
 
+  const { innerWidth: width} = window;
+
   return (
     <div>
       <Switch>
@@ -174,9 +176,11 @@ const HomePage = ({
                     loadMap={loadMap}
                   />
                 </div>
-                <div>
+                {width > 600 ? 
+                (<div>
                   <MapLegend legendItems={legendItemsInReverse} />
-                </div>
+                </div>) : null 
+          }
               </div>
             )
           }

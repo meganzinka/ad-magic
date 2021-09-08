@@ -9,7 +9,7 @@ import RegionZoom from "./RegionZoom";
 
 const Map = (props) => {
   const mapCenter = [39, -29];
-  const mapZoom = 1.5; 
+  const [mapZoom, setMapZoom] = useState(determineWindow())
   const [worldMapZoom, setWorldMapZoom] = useState();
   const [newWorldCenter, setWorldCenter] = useState();
 
@@ -22,6 +22,14 @@ const Map = (props) => {
       fillOpacity: 1,
     };
   };
+
+
+  function determineWindow() {
+    const { innerWidth: width} = window;
+    if (width < 600) {
+      return 0
+    } else return 4
+  }
 
   //when region is changed, send a new center and zoom into the map view
   useEffect(() => {
@@ -48,7 +56,7 @@ const Map = (props) => {
       setWorldMapZoom(3.48);
     } else {
       setWorldCenter([39, -29]);
-      setWorldMapZoom(1.5);
+      setWorldMapZoom(determineWindow());
     }
   }, [props.region]);
 
