@@ -28,7 +28,7 @@ const Map = (props) => {
     const { innerWidth: width} = window;
     if (width < 600) {
       return 0
-    } else return 4
+    } else return 1.5
   }
 
   //when region is changed, send a new center and zoom into the map view

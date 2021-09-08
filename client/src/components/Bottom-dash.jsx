@@ -100,12 +100,15 @@ export default function BottomDash() {
           SaleTypesLabels={SaleTypesLabels}
         />
       </div>
+      <br></br>
       <div className="bottom-charts">
         <Fullfilment
           FullfilmentAmounts={FullfilmentAmounts}
           FullfilmentLabels={FullfilmentLabels}
         />
       </div>
+      <br></br>
+
       <div className="bottom-charts">
         <OptInMarketing
           MarketingLabels={MarketingLabels}

@@ -200,9 +200,11 @@ const HomePage = ({
                     loadUnitedMap={loadUnitedMap}
                   />
                 </div>
-                <div>
+                {width > 600 ? 
+                (<div>
                   <MapLegend legendItems={legendItemsInReverse} />
-                </div>
+                </div>) : null 
+          }
               </div>
             )
           }

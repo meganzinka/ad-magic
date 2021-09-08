@@ -57,10 +57,10 @@ function App() {
       </section>
 
       <section id="container-three" className="snap-child">
-        {/* <div id="bottom-dash-header">
+        <div id="bottom-dash-header">
           <BottomDash />
-        </div> */}
-        {/* <Footer /> */}
+        </div>
+        <Footer />
       </section>
     </div>
   );

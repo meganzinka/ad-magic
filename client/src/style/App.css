@@ -363,7 +363,6 @@ ul {
   width: 100%;
   height: 80%;
 }
-
 /*--class wrapper for each individual pie chart component--*/
 .bottom-charts {
   width: 29%;
@@ -440,13 +439,17 @@ ul {
 
   #area-graph-comp-wrap {
     height: 32%;
-    margin-top: 3rem;
-    width: 85%; /*manipulate the width or height here to easily change graph size*/
+    margin-top: 1rem;
+    width: 65vw; /*manipulate the width or height here to easily change graph size*/
     display: flex;
     border-radius: 5px;
     background-color: white;
     box-shadow: 10px -1px 30px 5px rgba(112, 110, 110, 0.246);
-    margin-left: 7vw;
+    margin-left: 0vw;
+    justify-self: center;
+    align-self: center; 
+    margin-bottom: 1rem;
+
   }
 
   #top-dash {
@@ -502,6 +505,7 @@ ul {
     opacity: 0.8;
     background-image: url("./../svg/Purple.png");
     background-size: 100% 100%;
+    margin-bottom: 1rem;
   }
 
   #average-price {
@@ -510,6 +514,7 @@ ul {
     opacity: 0.8;
     background-image: url("./../svg/Blue.png");
     background-size: 100% 100%;
+    margin-bottom: 1rem;
   }
   
   #item-sold {
@@ -518,6 +523,7 @@ ul {
     background-image: url("./../svg/Yellow.png");
     background-size: 100% 100%;
     box-shadow: 15px 20px 40px 0.5px rgb(0, 0, 0, 0.3);
+    margin-bottom: 2rem;
   }
 
   #right-dash-header {
@@ -586,7 +592,7 @@ ul {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    /* height: 100%; */
+    height: auto;
   }
   
   /*next level down wrapper for*/
@@ -613,8 +619,93 @@ ul {
     background-color: #84b6e1;
     border-radius: 5px;
     height: 20vh;
-    /* grid-row: 2;  */
+}
+#bottom-dash-header {
+  display: flex; 
+  flex-direction: column;
+  height: 80%;
+  box-sizing: border-box; 
+  overflow:visible;
 }
 
+/*parent wrapper for three pie chart components*/
+#bottom-cont {
+  margin-top: 8vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+/*--class wrapper for each individual pie chart component--*/
+.bottom-charts {
+  width: 65vw;
+  
+}
+
+/*--wrapper for actual fulfillment pie chart--*/
+#f-chart {
+  display:block;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 15px 20px 40px 0.5px rgb(0, 0, 0, 0.4);
+  height: 100%;
+  width: 65vw;
+  background-color: #f5f8fa;
+}
+
+/*--wrapper for actual Opt In Marketing pie chart--*/
+#M-chart {
+  display:block;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 15px 20px 40px 0.5px rgb(0, 0, 0, 0.4);
+  background-color: #f5f8fa;
+  height: 100%;
+  width: 65vw;
+}
+
+/*--wrapper for actual Sales Type pie chart--*/
+#charts {
+  display:block;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5f8fa;
+  border-radius: 5px;
+  box-shadow: 15px 20px 40px 0.5px rgb(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+}
+
+#container-one {
+  grid-area: 1/2/2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+#container-two {
+  grid-area: 2/2/3/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+#container-three {
+  grid-area: 3/2/4/3;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-top: 20vh; 
+}
 
 }
