@@ -37,7 +37,7 @@ export default function TopDash(props) {
             Gross Revenue
           </div>
           <span className="top-dash-num">
-            {TotalSales} <span className="top-dash-small">$</span>
+            <span className="top-dash-small">$</span>{TotalSales}
           </span>
         </div>
       </div>
@@ -48,7 +48,7 @@ export default function TopDash(props) {
             Average Sale
           </div>
           <span className="top-dash-num">
-            {averagePrice} <span className="top-dash-small">$</span>
+            <span className="top-dash-small">$</span>{averagePrice} 
           </span>
         </div>
       </div>

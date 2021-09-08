@@ -98,11 +98,7 @@ const UnitedMap = ({ region, usBorderData, states, loadUnitedMap }) => {
           center={mapCenter}
           scrollWheelZoom={false}
           zoom={mapZoom}
-          style={{
-            backgroundColor: "#84b6e1",
-            borderRadius: "5px",
-            height: "60vh",
-          }}
+          id = "map-container"
         >
           {/*This GeoJson is overlaying polygons onto the tilelayer => polygons are the borders of US States */}
           <GeoJSON

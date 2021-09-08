@@ -93,7 +93,7 @@ export default function AreaGraph() {
       align: "center",
       margin: 15,
       offsetX: 0,
-      offsetY: 0,
+      offsetY: 15,
       floating: false,
       style: {
         fontSize: "18px",
