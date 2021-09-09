@@ -584,7 +584,7 @@ ul {
   }
 
   .apexcharts-svg{
-    width: 75vw; 
+    width: 65vw; 
   }
 
   #home-page {
@@ -670,6 +670,7 @@ ul {
   background-color: #f5f8fa;
   height: 100%;
   width: 65vw;
+  margin-bottom: 8vh; 
 }
 
 /*--wrapper for actual Sales Type pie chart--*/

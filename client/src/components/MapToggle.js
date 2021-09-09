@@ -304,7 +304,7 @@ const MapToggle = (props) => {
         <div className="section-title">MAP VIEW</div>
         <div className="switch-container">
           <img id="world-icon" src={location} alt="world" />
-          <div className="switch-title">World</div>
+          <div className="switch-title">World  </div>
 
           <label className="switch" onChange={switchMap}>
             <input type="checkbox" name="US" />

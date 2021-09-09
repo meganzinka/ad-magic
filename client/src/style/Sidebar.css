@@ -165,6 +165,7 @@ option {
 .switch-container {
   display: flex;
   align-items: center;
+  /* justify-content: */
   flex-direction: row;
 }
 
@@ -414,22 +415,23 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(1vw);
-  -ms-transform: translateX(1vw);
-  transform: translateX(1vw);
+  -webkit-transform: translateX(1.8vw);
+  -ms-transform: translateX(1.8vw);
+  transform: translateX(1.8vw);
 }
 
 /* Rounded sliders */
 .slider.round {
   border-radius: 7px;
   width: 6vw;
+  margin-left: 0.8vw;
+
 
 }
 
 #USTitle {
-  align-self: flex-end;
-  justify-self: flex-end; 
-  /* float: right;  */
+  position:absolute; 
+  right: 1vw; 
 }
 
 .switch-container {
@@ -443,5 +445,10 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
   top: 0.6vw; 
+}
+#update-button:hover {
+  font-size: x-small;
+  font-weight: bold;
+  cursor: pointer;
 }
 }
