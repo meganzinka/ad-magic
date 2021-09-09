@@ -11,6 +11,7 @@ export default function VendorsTopFive(props) {
     chart: {
       type: "bar",
       height: 350,
+      width: 10,
     },
     plotOptions: {
       bar: {
@@ -68,7 +69,7 @@ export default function VendorsTopFive(props) {
         options={options}
         series={series}
         type="bar"
-        width="635px"
+        width="100%"
         height="100%"
       />
     </div>

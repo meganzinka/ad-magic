@@ -11,6 +11,7 @@ export default function VendorsRev(props) {
     chart: {
       type: "bar",
       height: 350,
+      width: 350,
     },
     plotOptions: {
       bar: {
@@ -55,7 +56,7 @@ export default function VendorsRev(props) {
       floating: false,
       style: {
         fontSize: "14px",
-        fontWeight: "bold",
+        // fontWeight: "bold",
         fontFamily: "Avenir",
         color: "#263238",
       },
@@ -68,7 +69,7 @@ export default function VendorsRev(props) {
         options={options}
         series={series}
         type="bar"
-        width="635px"
+        width="100%"
         height="100%"
       />
     </div>
