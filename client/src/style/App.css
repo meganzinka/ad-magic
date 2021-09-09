@@ -7,11 +7,11 @@
 /*This helps the snapping work in safari*/
 body {
   background: #eaf0f6;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 /*This helps the snapping work in chrome and firefox*/
 html {
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 
 /*------Header----------*/
@@ -28,7 +28,7 @@ html {
 
 /*----main grid child containers-----*/
 .snap-child {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 
 #container-one {
